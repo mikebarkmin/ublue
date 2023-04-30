@@ -30,6 +30,10 @@ rpms:
   # needed for yafti (the first boot installer) (remove if you're not using yafti)
   - python3-pip
   - libadwaita # libadwaita comes with silverblue, but not with other flavors
+
+  - gnome-shell-extension-appindicator
+  - gnome-shell-extension-gsconnect
+  - nautilus-gsconnect
   # add your own below
   - flatpak-builder
   - fzf
