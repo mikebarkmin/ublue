@@ -10,7 +10,7 @@ base-image: ghcr.io/ublue-os/silverblue-main
 # If you use `latest`, you will be automatically updated
 # to the next major version assuming the image you're using as your base container
 # builds with the tag (all uBlue images do this).
-fedora-version: 37
+fedora-version: 38
 # This description will be visible in the container metadata
 description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
 # These scripts will be executed during the container build
@@ -31,6 +31,19 @@ rpms:
   - python3-pip
   - libadwaita # libadwaita comes with silverblue, but not with other flavors
   # add your own below
+  - flatpak-builder
+  - fzf
+  - git-crypt
+  - nautilus-python
+  - neovim
+  - nextcloud-client
+  - nextcloud-client-nautilus
+  - ripgrep
+  - simple-scan
+  - stow
+  - tmux
+  - ulauncher
+  - zsh
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
 # If you leave this empty you can use yafti for post-boot installation
@@ -43,3 +56,23 @@ flatpaks:
   - org.gustavoperedo.FontDownloader
   - com.github.tchx84.Flatseal
   - io.github.celluloid_player.Celluloid
+  - com.belmoussaoui.Authenticator
+  - com.belmoussaoui.Decoder
+  - com.github.jeromerobert.pdfarranger
+  - com.github.junrrein.PDFSlicer
+  - com.github.xournalpp.xournalpp
+  - com.spotify.Client
+  - com.valvesoftware.Steam
+  - com.visualstudio.code
+  - md.obsidian.Obsidian
+  - org.audacityteam.Audacity
+  - org.bluej.BlueJ
+  - org.greenfoot.Greenfoot
+  - org.cryptomator.Cryptomator
+  - org.geogebra.GeoGebra
+  - org.gimp.GIMP
+  - org.gnome.Connections
+  - org.inkscape.Inkscape
+  - org.processing.processingide
+  - org.signal.Signal
+  - org.turbowarp.TurboWarp
